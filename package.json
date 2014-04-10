@@ -1,0 +1,27 @@
+{
+  "name": "content-range",
+  "version": "0.0.0",
+  "description": "Content-range header formatter.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/neoziro/content-range.git"
+  },
+  "keywords": [
+    "content-range",
+    "header",
+    "formatter"
+  ],
+  "author": "Greg Bergé <berge.greg@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/neoziro/content-range/issues"
+  },
+  "homepage": "https://github.com/neoziro/content-range",
+  "devDependencies": {
+    "mocha": "^1.18.2"
+  }
+}
