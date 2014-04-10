@@ -40,5 +40,20 @@ describe('Content-range formatter', function () {
         count: 0
       }), 'items 0-19/0');
     });
+
+    it('should handle 0 result', function () {
+      assert.equal(contentRange.format({
+        name: 'items',
+        offset: 5,
+        limit: 0
+      }), 'items */*');
+
+      assert.equal(contentRange.format({
+        name: 'items',
+        offset: 5,
+        limit: 0,
+        count: 20
+      }), 'items */20');
+    });
   });
 });

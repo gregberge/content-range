@@ -24,10 +24,15 @@ function format(options) {
   options.count = typeof options.count === 'undefined' || options.count === null ?
     '*' : options.count;
 
+  var start = options.offset;
+  var end = options.offset + options.limit - 1;
+
+  if (end - start < 0) return util.format('%s */%s', options.name, options.count);
+
   return util.format('%s %s-%s/%s',
     options.name,
-    options.offset,
-    options.offset + options.limit - 1,
+    start,
+    end,
     options.count
   );
 }
