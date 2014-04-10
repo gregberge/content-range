@@ -18,5 +18,27 @@ describe('Content-range formatter', function () {
         count: 400
       }), 'items 20-69/400');
     });
+
+    it('should replace count by * if not defined', function () {
+      assert.equal(contentRange.format({
+        name: 'items',
+        offset: 0,
+        limit: 20
+      }), 'items 0-19/*');
+
+      assert.equal(contentRange.format({
+        name: 'items',
+        offset: 0,
+        limit: 20,
+        count: null
+      }), 'items 0-19/*');
+
+      assert.equal(contentRange.format({
+        name: 'items',
+        offset: 0,
+        limit: 20,
+        count: 0
+      }), 'items 0-19/0');
+    });
   });
 });

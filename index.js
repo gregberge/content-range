@@ -21,7 +21,10 @@ exports.format = format;
  */
 
 function format(options) {
-  return util.format('%s %d-%d/%d',
+  options.count = typeof options.count === 'undefined' || options.count === null ?
+    '*' : options.count;
+
+  return util.format('%s %s-%s/%s',
     options.name,
     options.offset,
     options.offset + options.limit - 1,
