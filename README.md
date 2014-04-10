@@ -25,6 +25,7 @@ var header = contentRange.format({
 });
 
 console.log(header); // items 10-30/100
+```
 
 ## License
 
