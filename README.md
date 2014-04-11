@@ -27,6 +27,31 @@ var header = contentRange.format({
 console.log(header); // items 10-29/100
 ```
 
+### contentRange.format(obj)
+
+Format a content-range header.
+
+```js
+var header = contentRange.format({
+  name: 'items',
+  offset: 10,
+  limit: 20,
+  count: 100
+});
+
+console.log(header); // items 10-29/100
+```
+
+### contentRange.parse(str)
+
+Parse a content-range header.
+
+```js
+var parts = contentRange.parse('items 10-29/100');
+
+console.log(parts); // { name: 'items', start: 10, end: 29, count: 100 }
+```
+
 ## License
 
 MIT

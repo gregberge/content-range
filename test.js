@@ -56,4 +56,28 @@ describe('Content-range formatter', function () {
       }), 'items */20');
     });
   });
+
+  describe('#parse', function () {
+    it('should parse header', function () {
+      assert.deepEqual(contentRange.parse('items 0-19/30'), {
+        name: 'items',
+        start: 0,
+        end: 19,
+        count: 30
+      });
+    });
+
+    it('should parse null start/end and null count', function () {
+      assert.deepEqual(contentRange.parse('items */*'), {
+        name: 'items',
+        start: null,
+        end: null,
+        count: null
+      });
+    });
+
+    it('should return null if parse fail', function () {
+      assert.equal(contentRange.parse('blooo'), null);
+    });
+  });
 });
