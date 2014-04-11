@@ -1,0 +1,23 @@
+{
+  "name": "content-range",
+  "main": "index.js",
+  "version": "0.1.2",
+  "homepage": "https://github.com/neoziro/content-range",
+  "authors": [
+    "Greg Bergé <neoziro@gmail.com>"
+  ],
+  "description": "Content-range header formatter.",
+  "keywords": [
+    "content-range",
+    "header",
+    "formatter",
+    "parser"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "test.js",
+    "package.json"
+  ]
+}

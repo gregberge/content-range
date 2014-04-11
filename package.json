@@ -13,7 +13,8 @@
   "keywords": [
     "content-range",
     "header",
-    "formatter"
+    "formatter",
+    "parser"
   ],
   "author": "Greg Bergé <berge.greg@gmail.com>",
   "license": "MIT",
