@@ -1,6 +1,6 @@
 {
   "name": "content-range",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Content-range header formatter.",
   "main": "index.js",
   "scripts": {
