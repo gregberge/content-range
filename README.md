@@ -18,10 +18,10 @@ npm install content-range
 var contentRange = require('content-range');
 
 var header = contentRange.format({
-  name: 'items',
-  offset: 10,
+  unit: 'items',
+  first: 10,
   limit: 20,
-  count: 100
+  length: 100
 });
 
 console.log(header); // items 10-29/100
@@ -33,10 +33,10 @@ Format a content-range header.
 
 ```js
 var header = contentRange.format({
-  name: 'items',
-  offset: 10,
+  unit: 'items',
+  first: 10,
   limit: 20,
-  count: 100
+  length: 100
 });
 
 console.log(header); // items 10-29/100
@@ -49,7 +49,7 @@ Parse a content-range header.
 ```js
 var parts = contentRange.parse('items 10-29/100');
 
-console.log(parts); // { name: 'items', start: 10, end: 29, count: 100 }
+console.log(parts); // { unit: 'items', first: 10, last: 29, length: 100 }
 ```
 
 ## License
