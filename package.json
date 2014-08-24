@@ -23,6 +23,6 @@
   },
   "homepage": "https://github.com/neoziro/content-range",
   "devDependencies": {
-    "mocha": "^1.18.2"
+    "mocha": "^1.21.4"
   }
 }
