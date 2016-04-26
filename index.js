@@ -45,6 +45,8 @@
   function parse(str) {
     var matches;
 
+    if (typeof str !== "string") return null;
+
     if (matches = str.match(/^(\w+) (\d+)-(\d+)\/(\d+|\*)/)) return {
         unit: matches[1],
         first: +matches[2],
