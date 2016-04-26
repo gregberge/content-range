@@ -86,5 +86,9 @@ describe('Content-range formatter', function () {
     it('should return null if parse fail', function () {
       assert.equal(contentRange.parse('blooo'), null);
     });
+
+    it('should return null if parse is not a string', function () {
+      assert.equal(contentRange.parse(null), null);
+    });
   });
 });
