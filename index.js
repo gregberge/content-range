@@ -28,7 +28,7 @@
     options.length = options.length == null ? '*' : options.length;
 
     var first = options.first;
-    var last = options.last || (options.first + options.limit - 1);
+    var last = options.last ?? (options.first + options.limit - 1);
 
     if (last - first < 0) return options.unit + ' */' + options.length;
 

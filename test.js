@@ -13,6 +13,13 @@ describe('Content-range formatter', function () {
 
       assert.equal(contentRange.format({
         unit: 'items',
+        first: 0,
+        last: 0,
+        length: 1
+      }), 'items 0-0/1');
+
+      assert.equal(contentRange.format({
+        unit: 'items',
         first: 20,
         limit: 50,
         length: 400
