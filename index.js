@@ -25,7 +25,6 @@
    */
 
   function format(options) {
-    console.table(options)
     options.length = options.length == null ? '*' : options.length;
 
     var first = options.first;
