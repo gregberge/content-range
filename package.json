@@ -4,7 +4,8 @@
   "description": "Content-range header formatter.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "release": "standard-version"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,7 @@
   },
   "homepage": "https://github.com/neoziro/content-range",
   "devDependencies": {
-    "mocha": "^8.2.1"
+    "mocha": "^8.2.1",
+    "standard-version": "^9.0.0"
   }
 }
