@@ -7,9 +7,10 @@
     "test": "mocha",
     "release": "standard-version"
   },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/neoziro/content-range.git"
+  "repository": "github:gregberge/react-merge-refs",
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/gregberge"
   },
   "keywords": [
     "content-range",
@@ -19,10 +20,6 @@
   ],
   "author": "Greg Bergé <berge.greg@gmail.com>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/neoziro/content-range/issues"
-  },
-  "homepage": "https://github.com/neoziro/content-range",
   "devDependencies": {
     "mocha": "^8.2.1",
     "standard-version": "^9.0.0"
