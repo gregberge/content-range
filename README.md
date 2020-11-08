@@ -1,8 +1,6 @@
 # content-range
 
 [![Build Status](https://travis-ci.org/gregberge/content-range.svg?branch=master)](https://travis-ci.org/gregberge/content-range)
-[![Dependency Status](https://david-dm.org/gregberge/content-range.svg?theme=shields.io)](https://david-dm.org/gregberge/content-range)
-[![devDependency Status](https://david-dm.org/gregberge/content-range/dev-status.svg?theme=shields.io)](https://david-dm.org/gregberge/content-range#info=devDependencies)
 
 Content-range header formatter.
 
