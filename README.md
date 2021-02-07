@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/gregberge/content-range.svg?branch=master)](https://travis-ci.org/gregberge/content-range)
 
-Content-range header formatter.
+Parser and formatter for HTTP/1.1 Content-Range header field.
 
 ## Install
 
@@ -13,41 +13,23 @@ npm install content-range
 ## Usage
 
 ```js
-var contentRange = require("content-range");
+import { format, parse } from "content-range";
 
-var header = contentRange.format({
-  unit: "items",
-  first: 10,
-  limit: 20,
-  length: 100,
+format({
+  unit: "bytes",
+  start: 10,
+  end: 20,
+  size: 100,
 });
+// bytes 10-20/100
 
-console.log(header); // items 10-29/100
-```
-
-### contentRange.format(obj)
-
-Format a content-range header.
-
-```js
-var header = contentRange.format({
-  unit: "items",
-  first: 10,
-  limit: 20,
-  length: 100,
-});
-
-console.log(header); // items 10-29/100
-```
-
-### contentRange.parse(str)
-
-Parse a content-range header.
-
-```js
-var parts = contentRange.parse("items 10-29/100");
-
-console.log(parts); // { unit: 'items', first: 10, last: 29, length: 100 }
+parse("bytes 10-20/100");
+// {
+//   unit: "bytes",
+//   start: 10,
+//   end: 20,
+//   length: 100,
+// }
 ```
 
 ## License
