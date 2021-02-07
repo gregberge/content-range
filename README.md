@@ -1,6 +1,6 @@
 # content-range
 
-[![Build Status](https://travis-ci.org/gregberge/content-range.svg?branch=master)](https://travis-ci.org/gregberge/content-range)
+![Node.js CI](https://github.com/gregberge/content-range/workflows/Node.js%20CI/badge.svg)
 
 Parser and formatter for HTTP/1.1 Content-Range header field.
 
