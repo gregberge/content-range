@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "sideEffects": false,
   "main": "dist/index.js",
-  "module": "dist/contant-range.esm.js",
+  "module": "dist/content-range.esm.js",
   "typings": "dist/index.d.js",
   "description": "Content-Range header formatter .",
   "scripts": {
